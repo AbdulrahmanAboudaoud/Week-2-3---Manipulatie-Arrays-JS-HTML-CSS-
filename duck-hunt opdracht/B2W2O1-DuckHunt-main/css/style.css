@@ -1,0 +1,105 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#stage {
+	position: relative;
+	width: 1280px;
+	height: 769px;
+	margin: 10px auto;
+	cursor: crosshair;
+}
+#stageImage {
+	border: black 10px solid;
+}
+#duck {
+	position: absolute;
+	left: calc(1280px / 2 - 250px / 2);
+	top: 260px;
+	display: inline-block;
+}
+#scoreboard {
+	width: 300px;
+	height: 150px;
+	background-color: black;
+	border: white 10px solid;
+	border-radius: 40px;
+	margin: 20px auto;
+}
+.scoreboardText {
+	margin-left: 25px;
+	margin-top: 20px;
+	color: green;
+	font-size: 30px;
+	font-family: 'Press Start 2P', cursive;
+}
+.scoreboardText div {
+	margin-bottom: 25px;
+}
+#hitText, #missText {
+	display: inline-block;
+}
+#gameOverScreen {
+	display: none;
+	background-color: black;
+	width: 1290px;
+	height: 779px;
+	color: white;
+	position: relative;
+	margin: 10px auto;
+}
+.gameOverImage {
+	position: absolute;
+	left: calc(640px - 250px);
+}
+.finalScore {
+	position: absolute;
+	top: 52%;
+	left: calc(650px - 250px);
+}
+.finalScore > div {
+	color: white;
+	font-size: 30px;
+	font-family: 'Press Start 2P', cursive;
+	margin: 50px 0;
+}
+#retryButton {
+	position: absolute;
+	bottom: 25px;
+	right: 20px;
+	padding: 40px 60px;
+	color: white;
+	font-size: 30px;
+	background-color: green;
+	border-radius: 20px;
+	margin-right: 950px;
+	font-family: 'Press Start 2P', cursive;
+}
+button:focus { 
+	outline: none;
+}
+#finalScoreHitText {
+	color: #20D801;
+	display: inline-block;
+}
+#finalScoreMissText {
+	color: #D80101;
+	display: inline-block;
+}
+.box {
+	position: absolute;
+	bottom: 90px;
+	width: 1280px;
+}
+#gameplayFeedback {
+	text-align: center;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 20px;
+}
+
